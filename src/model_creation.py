@@ -21,7 +21,6 @@ def model_creation(train_data, ycol, model_directory, model_path, log_file):
     try:
         data = train_data
         file = log_file
-        log(file_object=file, log_message="\n\nmodel Creation process is start") # logs the details
 
         y_train = data[ycol] # get the output feature
         x_train = data.drop(columns=[ycol], axis=1) # get the features data
@@ -70,7 +69,7 @@ def model_creation(train_data, ycol, model_directory, model_path, log_file):
     except Exception as e:
         print(e)
         file = log_file
-        log(file_object=file, log_message=f"Error will be: {e} \n\n")  # logs the error if occurs
+        log(file_object=file, log_message=f"Error will be: {e}")  # logs the error if occurs
         raise e
 
 
