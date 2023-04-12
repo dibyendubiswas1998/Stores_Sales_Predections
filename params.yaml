@@ -1,0 +1,106 @@
+# Define project name & project version:
+base:
+  project: Store_Sales_Predection
+  version: v.0.0.1
+  random_state: 42
+  split_ratio: 0.20
+
+# mention source of data:
+data_source:
+  train_path: Raw Data/Train_new.csv
+  test_path: Raw Data/Test_new.csv
+
+# Detailed about Categorical features, Numerical features and output column:
+data_defination:
+  categorical_cols: ['item_fat_content', 'item_type', 'outlet_type', 'outlet_location_type', 'outlet_size_mode']
+  neumerical_cols: ['item_visibility', 'item_mrp', 'item_weight_mean', 'item_outlet_sales']
+  xcols: ['item_fat_content', 'item_type', 'outlet_type', 'outlet_location_type', 'outlet_size_mode']
+  output_col: 'item_outlet_sales'
+
+# Handle the Categorical & Numerical features:
+feature_handling:
+  # Applying Encoding Technique:
+  encoding_tech:
+    # Applying Target Encoding technique:
+    target_encoding:
+      # for item_fat_content feature:
+      item_fat_content:
+        col: 'item_fat_content'
+        map_dct: {'low fat':0, 'regular':1}
+      # for outlet_type feature:
+      outlet_type:
+        col: 'outlet_type'
+        map_dct: {'supermarket':0, 'grocery store':1}
+      # for outlet_location_type feature:
+      outlet_location_type:
+        col: 'outlet_location_type'
+        map_dct: {'tier 1':0, 'tier 2':1, 'tier 3':2}
+      # for outlet_location_type feature
+      outlet_size_mode:
+        col: 'outlet_size_mode'
+        map_dct: {'small':0, 'medium':1, 'high':2}
+    # Applying Mean Encoding technique:
+    mean_encoding:
+      # for item_type feature:
+      item_type:
+        col: 'item_type'
+  # Applying IQR method to remove the outliers:
+  iqr:
+    q1: 25
+    q3: 75
+  # Applying Normalization techniques:
+  normalization:
+    train_cols: ['item_fat_content', 'item_type', 'outlet_type', 'outlet_location_type', 'outlet_size_mode', 'item_visibility', 'item_mrp', 'item_weight_mean']
+    test_cols: ['item_fat_content', 'item_type', 'outlet_type', 'outlet_location_type', 'outlet_size_mode', 'item_visibility', 'item_mrp', 'item_weight_mean']
+
+# A particular folder where you store Raw Dara, Processed Data, Model, Logs files, Model Performance Report, etc.
+artifacts:
+  artifacts_dir: artifacts
+  # mention logs files:
+  log_files:
+    log_files_dir: artifacts/Logs
+    training_log_file: artifacts/Logs/training_logs.txt
+    prediction_log_file: artifacts/Logs/prediction_logs.txt
+  # raw data:
+  raw_data:
+    raw_data_dir: artifacts/Raw_Data
+    train_path: artifacts/Raw_Data/train.csv
+    test_path: artifacts/Raw_Data/test.csv
+  # split data:
+  split_data:
+    split_data_dir: artifacts/Split_Data
+    train_path: artifacts/Split_Data/train.csv
+    evaluation_path: artifacts/Split_Data/evaluation.csv
+  # matrices:
+  matrices:
+    metrics_dir: artifacts/Matrices
+    metrics_file_path: artifacts/Matrices/key_matrix.txt
+
+  # processed data:
+  processed_data:
+    processed_dir: artifacts/Processed_Data
+    train_path: artifacts/Processed_Data/train.csv
+    evaluation_path: artifacts/Processed_Data/evaluation.csv
+    test_path: artifacts/Processed_Data/test.csv
+  # model:
+  model:
+    model_dir: artifacts/Model
+    model_path: artifacts/Model/model.joblib
+  # report:
+  report:
+    reports_dir: artifacts/Model_Performance_Report
+    params: artifacts/Model_Performance_Report/params.json
+    scores: artifacts/Model_Performance_Report/score.json
+
+# Hyperparameter tuning:
+hyperparameter:
+  # hyperparameter for SVR algorithm
+  svr_model:
+    method: GridSearchCV
+    kernal: ['linear', 'rbf']
+    C: [0.1, 1, 10, 100]
+    gamma: ['scale', 'auto']
+  # KFold cross validation:
+  cross_validation:
+    k_fold: KFold
+    k: 5
