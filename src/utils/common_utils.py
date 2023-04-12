@@ -86,7 +86,7 @@ def save_report(file_path: str, report:dict):
         :return: params & score info.
     """
     try:
-        with open(file_path, 'w') as f:
+        with open(file_path, 'a+') as f:
             json.dump(report, f, indent=4)
     except Exception as e:
         raise e
