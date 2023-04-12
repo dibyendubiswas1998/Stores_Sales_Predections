@@ -1,0 +1,21 @@
+# local_lib
+-e .
+
+# Data Manipulation libaries:
+numpy
+pandas
+scipy
+
+# Data Visualization libaries:
+matplotlib
+seaborn
+
+# ML related  libaries:
+scikit-learn
+
+# Deployment libaries:
+flask
+
+# dvc:
+dvc
+dvc[gdrive]
