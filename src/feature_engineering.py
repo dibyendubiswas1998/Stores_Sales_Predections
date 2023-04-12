@@ -22,7 +22,7 @@ def target_encoding(data, xcol, dct_map, log_file):
     except Exception as e:
         print(e)
         file = log_file
-        log(file_object=file, log_message=f"Error will be: {e} \n\n")  # logs the details
+        log(file_object=file, log_message=f"Error will be: {e}")  # logs the details
         raise e
 
 
@@ -48,7 +48,7 @@ def mean_encoding(data, xcol, ycol, log_file):
     except Exception as e:
         print(e)
         file = log_file
-        log(file_object=file, log_message=f"Error will be: {e} \n\n")  # logs the details
+        log(file_object=file, log_message=f"Error will be: {e}")  # logs the details
         raise e
 
 
