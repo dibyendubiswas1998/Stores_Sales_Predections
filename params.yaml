@@ -91,6 +91,11 @@ artifacts:
     reports_dir: artifacts/Model_Performance_Report
     params: artifacts/Model_Performance_Report/params.json
     scores: artifacts/Model_Performance_Report/score.json
+  # prediction:
+  prediction:
+    prediction_dir: artifacts/Prediction
+    prediction_file: artifacts/Prediction/predict.csv
+
 
 # Hyperparameter tuning:
 hyperparameter:
