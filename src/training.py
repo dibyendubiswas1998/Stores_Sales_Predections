@@ -21,7 +21,7 @@ def training(config_path:str):
 
         config = read_params(config_path=config_path) # read params.yaml file
         training_logs_file = config['artifacts']['log_files']['training_log_file'] # artifacts/Logs/training_logs.txt
-        log(file_object=training_logs_file, log_message="training process starts\n\n")
+        log(file_object=training_logs_file, log_message="training process starts")
 
 
         # Step-01: load & save train.csv data
