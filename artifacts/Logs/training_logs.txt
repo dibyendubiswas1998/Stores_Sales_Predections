@@ -55,3 +55,676 @@
 2023-04-13/08:38:39		create directory for storing the scores, path: artifacts/Model_Performance_Report
 2023-04-13/08:38:39		save the report & score will be: {'mae': 305.31484353241416, 'mse': 192284.54166378776, 'rmse': 438.50261306380804, 'r2_score': 0.9349961879178434, 'train_range_op': [33.29, 13086.9648], 'evaluation_range_op': [33.29, 13086.9648]}
 2023-04-13/08:38:39		Successfully Store the Model Performance report
+2023-04-13/09:45:53		training process starts
+2023-04-13/09:45:53		Step-1: load & save train.csv data
+2023-04-13/09:45:53		read the data, shape: (8523, 9)
+2023-04-13/09:45:53		store data in : artifacts/Raw_Data/train.csv
+2023-04-13/09:45:53		successfully data is loaded and save
+
+
+2023-04-13/09:45:53		Step-2: Start to split the data
+2023-04-13/09:45:54		read the data, shape: (8523, 9)
+2023-04-13/09:45:54		split ghe data in tran.csv: (6818, 9) & evaluation.csv: (1705, 9)
+2023-04-13/09:45:54		create directory for storing the data: artifacts/Split_Data
+2023-04-13/09:45:54		store data in : artifacts/Split_Data/train.csv
+2023-04-13/09:45:54		store data in : artifacts/Split_Data/evaluation.csv
+2023-04-13/09:45:54		Splitting Operation completed
+2023-04-13/09:45:54		Successfully split the data
+
+
+2023-04-13/09:45:54		Step-3: Apply Encoding technique (mean encoding & target encoding) & store the data
+2023-04-13/09:45:54		perform Mean encoding on xcol: item_fat_content, ycol: item_outlet_sales
+2023-04-13/09:45:54		perform target encoding encoding on xcol: item_fat_content
+2023-04-13/09:45:54		perform Mean encoding on xcol: item_fat_content, ycol: item_outlet_sales
+2023-04-13/09:45:54		perform target encoding encoding on xcol: item_fat_content
+2023-04-13/09:45:54		perform Mean encoding on xcol: item_type, ycol: item_outlet_sales
+2023-04-13/09:45:54		perform target encoding encoding on xcol: item_type
+2023-04-13/09:45:54		perform Mean encoding on xcol: item_type, ycol: item_outlet_sales
+2023-04-13/09:45:54		perform target encoding encoding on xcol: item_type
+2023-04-13/09:45:54		perform Mean encoding on xcol: outlet_type, ycol: item_outlet_sales
+2023-04-13/09:45:54		perform target encoding encoding on xcol: outlet_type
+2023-04-13/09:45:54		perform Mean encoding on xcol: outlet_type, ycol: item_outlet_sales
+2023-04-13/09:45:54		perform target encoding encoding on xcol: outlet_type
+2023-04-13/09:45:54		perform Mean encoding on xcol: outlet_location_type, ycol: item_outlet_sales
+2023-04-13/09:45:54		perform target encoding encoding on xcol: outlet_location_type
+2023-04-13/09:45:54		perform Mean encoding on xcol: outlet_location_type, ycol: item_outlet_sales
+2023-04-13/09:45:54		perform target encoding encoding on xcol: outlet_location_type
+2023-04-13/09:45:54		perform Mean encoding on xcol: outlet_size_mode, ycol: item_outlet_sales
+2023-04-13/09:45:54		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-13/09:45:54		perform Mean encoding on xcol: outlet_size_mode, ycol: item_outlet_sales
+2023-04-13/09:45:54		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-13/09:45:54		store data in : artifacts/Processed_Data/train.csv & artifacts/Processed_Data/evaluation.csv
+2023-04-13/09:45:54		Successfully perform Mean Encoding technique
+
+
+2023-04-13/09:45:54		Step-4: Start to create the model
+2023-04-13/09:45:54		read the data, shape: (6818, 9)
+2023-04-13/09:45:54		separate x_train & y_train  feature
+2023-04-13/09:45:54		scaled the x_train data using StandardScaler() method
+2023-04-13/10:23:50		training process starts
+2023-04-13/10:23:50		Step-1: load & save train.csv data
+2023-04-13/10:23:50		read the data, shape: (8523, 9)
+2023-04-13/10:23:50		store data in : artifacts/Raw_Data/train.csv
+2023-04-13/10:23:50		successfully data is loaded and save
+
+
+2023-04-13/10:23:50		Step-2: Start to split the data
+2023-04-13/10:23:50		read the data, shape: (8523, 9)
+2023-04-13/10:23:50		split ghe data in tran.csv: (6818, 9) & evaluation.csv: (1705, 9)
+2023-04-13/10:23:50		create directory for storing the data: artifacts/Split_Data
+2023-04-13/10:23:50		store data in : artifacts/Split_Data/train.csv
+2023-04-13/10:23:50		store data in : artifacts/Split_Data/evaluation.csv
+2023-04-13/10:23:50		Splitting Operation completed
+2023-04-13/10:23:50		Successfully split the data
+
+
+2023-04-13/10:23:50		Step-3: Apply Encoding technique (mean encoding & target encoding) & store the data
+2023-04-13/10:23:50		perform Mean encoding on xcol: item_fat_content, ycol: item_outlet_sales
+2023-04-13/10:23:50		perform target encoding encoding on xcol: item_fat_content
+2023-04-13/10:23:50		perform Mean encoding on xcol: item_fat_content, ycol: item_outlet_sales
+2023-04-13/10:23:50		perform target encoding encoding on xcol: item_fat_content
+2023-04-13/10:23:50		perform Mean encoding on xcol: item_type, ycol: item_outlet_sales
+2023-04-13/10:23:50		perform target encoding encoding on xcol: item_type
+2023-04-13/10:23:50		perform Mean encoding on xcol: item_type, ycol: item_outlet_sales
+2023-04-13/10:23:50		perform target encoding encoding on xcol: item_type
+2023-04-13/10:23:50		perform Mean encoding on xcol: outlet_type, ycol: item_outlet_sales
+2023-04-13/10:23:50		perform target encoding encoding on xcol: outlet_type
+2023-04-13/10:23:50		perform Mean encoding on xcol: outlet_type, ycol: item_outlet_sales
+2023-04-13/10:23:50		perform target encoding encoding on xcol: outlet_type
+2023-04-13/10:23:50		perform Mean encoding on xcol: outlet_location_type, ycol: item_outlet_sales
+2023-04-13/10:23:50		perform target encoding encoding on xcol: outlet_location_type
+2023-04-13/10:23:50		perform Mean encoding on xcol: outlet_location_type, ycol: item_outlet_sales
+2023-04-13/10:23:50		perform target encoding encoding on xcol: outlet_location_type
+2023-04-13/10:23:50		perform Mean encoding on xcol: outlet_size_mode, ycol: item_outlet_sales
+2023-04-13/10:23:50		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-13/10:23:50		perform Mean encoding on xcol: outlet_size_mode, ycol: item_outlet_sales
+2023-04-13/10:23:50		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-13/10:23:51		store data in : artifacts/Processed_Data/train.csv & artifacts/Processed_Data/evaluation.csv
+2023-04-13/10:23:51		Successfully perform Mean Encoding technique
+
+
+2023-04-13/10:23:51		Step-4: Start to create the model
+2023-04-13/10:23:51		read the data, shape: (6818, 9)
+2023-04-13/10:23:51		separate x_train & y_train  feature
+2023-04-13/10:23:51		scaled the x_train data using StandardScaler() method
+2023-04-13/10:23:57		create the RandomForestRegressor model after getting params.
+2023-04-13/10:23:57		save the model in artifacts/Model/model.joblib directory.
+2023-04-13/10:23:57		Successfully Model is created
+
+
+2023-04-13/10:23:57		Step-5: Start to Evaluate the Model Performance
+2023-04-13/10:23:57		applying standardization on evaluation data
+2023-04-13/10:23:57		load the model for predictions from artifacts/Model/model.joblib
+2023-04-13/10:23:57		create directory for storing the scores, path: artifacts/Model_Performance_Report
+2023-04-13/10:23:57		save the report & score will be: {'mae': 304.8470560460546, 'mse': 193294.2388582925, 'rmse': 439.65240686057035, 'r2_score': 0.9346548491595451, 'train_range_op': [33.29, 13086.9648], 'evaluation_range_op': [33.29, 13086.9648]}
+2023-04-13/10:23:57		Successfully Store the Model Performance report
+2023-04-14/17:58:25		training process starts
+2023-04-14/17:58:26		Step-1: load & save train.csv data
+2023-04-14/17:58:26		read the data, shape: (8523, 9)
+2023-04-14/17:58:26		store data in : artifacts/Raw_Data/train.csv
+2023-04-14/17:58:26		successfully data is loaded and save
+
+
+2023-04-14/17:58:26		Step-2: Start to split the data
+2023-04-14/17:58:26		read the data, shape: (8523, 9)
+2023-04-14/17:58:26		split ghe data in tran.csv: (6818, 9) & evaluation.csv: (1705, 9)
+2023-04-14/17:58:26		create directory for storing the data: artifacts/Split_Data
+2023-04-14/17:58:26		store data in : artifacts/Split_Data/train.csv
+2023-04-14/17:58:26		store data in : artifacts/Split_Data/evaluation.csv
+2023-04-14/17:58:26		Splitting Operation completed
+2023-04-14/17:58:26		Successfully split the data
+
+
+2023-04-14/17:58:26		Step-3: Apply Encoding technique (mean encoding & target encoding) & store the data
+2023-04-14/17:58:26		perform Mean encoding on xcol: item_fat_content, ycol: item_outlet_sales
+2023-04-14/17:58:26		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/17:58:26		perform Mean encoding on xcol: item_fat_content, ycol: item_outlet_sales
+2023-04-14/17:58:26		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/17:58:26		perform Mean encoding on xcol: item_type, ycol: item_outlet_sales
+2023-04-14/17:58:26		perform target encoding encoding on xcol: item_type
+2023-04-14/17:58:26		perform Mean encoding on xcol: item_type, ycol: item_outlet_sales
+2023-04-14/17:58:26		perform target encoding encoding on xcol: item_type
+2023-04-14/17:58:26		perform Mean encoding on xcol: outlet_type, ycol: item_outlet_sales
+2023-04-14/17:58:26		perform target encoding encoding on xcol: outlet_type
+2023-04-14/17:58:26		perform Mean encoding on xcol: outlet_type, ycol: item_outlet_sales
+2023-04-14/17:58:26		perform target encoding encoding on xcol: outlet_type
+2023-04-14/17:58:26		perform Mean encoding on xcol: outlet_location_type, ycol: item_outlet_sales
+2023-04-14/17:58:26		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/17:58:26		perform Mean encoding on xcol: outlet_location_type, ycol: item_outlet_sales
+2023-04-14/17:58:26		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/17:58:26		perform Mean encoding on xcol: outlet_size_mode, ycol: item_outlet_sales
+2023-04-14/17:58:26		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/17:58:26		perform Mean encoding on xcol: outlet_size_mode, ycol: item_outlet_sales
+2023-04-14/17:58:26		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/17:58:27		store data in : artifacts/Processed_Data/train.csv & artifacts/Processed_Data/evaluation.csv
+2023-04-14/17:58:27		Successfully perform Mean Encoding technique
+
+
+2023-04-14/17:58:27		Step-4: Start to create the model
+2023-04-14/17:58:27		read the data, shape: (6818, 9)
+2023-04-14/17:58:27		separate x_train & y_train  feature
+2023-04-14/17:58:27		scaled the x_train data using StandardScaler() method
+2023-04-14/17:58:33		create the RandomForestRegressor model after getting params.
+2023-04-14/17:58:33		save the model in artifacts/Model/model.joblib directory.
+2023-04-14/17:58:33		Successfully Model is created
+
+
+2023-04-14/17:58:33		Step-5: Start to Evaluate the Model Performance
+2023-04-14/17:58:33		applying standardization on evaluation data
+2023-04-14/17:58:33		load the model for predictions from artifacts/Model/model.joblib
+2023-04-14/17:58:33		create directory for storing the scores, path: artifacts/Model_Performance_Report
+2023-04-14/17:58:33		save the report & score will be: {'mae': 304.4609828635963, 'mse': 193862.29403776478, 'rmse': 440.2979605196517, 'r2_score': 0.9344628121303633, 'train_range_op': [33.29, 13086.9648], 'evaluation_range_op': [33.29, 13086.9648]}
+2023-04-14/17:58:33		Successfully Store the Model Performance report
+2023-04-14/18:00:30		training process starts
+2023-04-14/18:00:30		Step-1: load & save train.csv data
+2023-04-14/18:00:30		read the data, shape: (8523, 9)
+2023-04-14/18:00:31		store data in : artifacts/Raw_Data/train.csv
+2023-04-14/18:00:31		successfully data is loaded and save
+
+
+2023-04-14/18:00:31		Step-2: Start to split the data
+2023-04-14/18:00:31		read the data, shape: (8523, 9)
+2023-04-14/18:00:31		split ghe data in tran.csv: (6818, 9) & evaluation.csv: (1705, 9)
+2023-04-14/18:00:31		create directory for storing the data: artifacts/Split_Data
+2023-04-14/18:00:31		store data in : artifacts/Split_Data/train.csv
+2023-04-14/18:00:31		store data in : artifacts/Split_Data/evaluation.csv
+2023-04-14/18:00:31		Splitting Operation completed
+2023-04-14/18:00:31		Successfully split the data
+
+
+2023-04-14/18:00:31		Step-3: Apply Encoding technique (mean encoding & target encoding) & store the data
+2023-04-14/18:00:31		perform Mean encoding on xcol: item_fat_content, ycol: item_outlet_sales
+2023-04-14/18:00:31		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/18:00:31		perform Mean encoding on xcol: item_fat_content, ycol: item_outlet_sales
+2023-04-14/18:00:31		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/18:00:31		perform Mean encoding on xcol: item_type, ycol: item_outlet_sales
+2023-04-14/18:00:31		perform target encoding encoding on xcol: item_type
+2023-04-14/18:00:31		perform Mean encoding on xcol: item_type, ycol: item_outlet_sales
+2023-04-14/18:00:31		perform target encoding encoding on xcol: item_type
+2023-04-14/18:00:31		perform Mean encoding on xcol: outlet_type, ycol: item_outlet_sales
+2023-04-14/18:00:31		perform target encoding encoding on xcol: outlet_type
+2023-04-14/18:00:31		perform Mean encoding on xcol: outlet_type, ycol: item_outlet_sales
+2023-04-14/18:00:31		perform target encoding encoding on xcol: outlet_type
+2023-04-14/18:00:31		perform Mean encoding on xcol: outlet_location_type, ycol: item_outlet_sales
+2023-04-14/18:00:31		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/18:00:31		perform Mean encoding on xcol: outlet_location_type, ycol: item_outlet_sales
+2023-04-14/18:00:31		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/18:00:31		perform Mean encoding on xcol: outlet_size_mode, ycol: item_outlet_sales
+2023-04-14/18:00:31		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/18:00:31		perform Mean encoding on xcol: outlet_size_mode, ycol: item_outlet_sales
+2023-04-14/18:00:31		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/18:00:31		store data in : artifacts/Processed_Data/train.csv & artifacts/Processed_Data/evaluation.csv
+2023-04-14/18:00:31		Successfully perform Mean Encoding technique
+
+
+2023-04-14/18:00:31		Step-4: Start to create the model
+2023-04-14/18:00:31		read the data, shape: (6818, 9)
+2023-04-14/18:00:31		separate x_train & y_train  feature
+2023-04-14/18:00:31		scaled the x_train data using StandardScaler() method
+2023-04-14/18:00:37		create the RandomForestRegressor model after getting params.
+2023-04-14/18:00:37		save the model in artifacts/Model/model.joblib directory.
+2023-04-14/18:00:37		Successfully Model is created
+
+
+2023-04-14/18:00:37		Step-5: Start to Evaluate the Model Performance
+2023-04-14/18:00:38		applying standardization on evaluation data
+2023-04-14/18:00:38		load the model for predictions from artifacts/Model/model.joblib
+2023-04-14/18:00:38		create directory for storing the scores, path: artifacts/Model_Performance_Report
+2023-04-14/18:00:38		save the report & score will be: {'mae': 304.14904023203286, 'mse': 192378.55023627548, 'rmse': 438.60979268169046, 'r2_score': 0.9349644073309734, 'train_range_op': [33.29, 13086.9648], 'evaluation_range_op': [33.29, 13086.9648]}
+2023-04-14/18:00:38		Successfully Store the Model Performance report
+2023-04-14/18:01:22		training process starts
+2023-04-14/18:01:22		Step-1: load & save train.csv data
+2023-04-14/18:01:22		read the data, shape: (8523, 9)
+2023-04-14/18:01:22		store data in : artifacts/Raw_Data/train.csv
+2023-04-14/18:01:22		successfully data is loaded and save
+
+
+2023-04-14/18:01:22		Step-2: Start to split the data
+2023-04-14/18:01:22		read the data, shape: (8523, 9)
+2023-04-14/18:01:22		split ghe data in tran.csv: (6818, 9) & evaluation.csv: (1705, 9)
+2023-04-14/18:01:22		create directory for storing the data: artifacts/Split_Data
+2023-04-14/18:01:22		store data in : artifacts/Split_Data/train.csv
+2023-04-14/18:01:22		store data in : artifacts/Split_Data/evaluation.csv
+2023-04-14/18:01:22		Splitting Operation completed
+2023-04-14/18:01:22		Successfully split the data
+
+
+2023-04-14/18:01:22		Step-3: Apply Encoding technique (mean encoding & target encoding) & store the data
+2023-04-14/18:01:22		perform Mean encoding on xcol: item_fat_content, ycol: item_outlet_sales
+2023-04-14/18:01:22		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/18:01:22		perform Mean encoding on xcol: item_fat_content, ycol: item_outlet_sales
+2023-04-14/18:01:22		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/18:01:22		perform Mean encoding on xcol: item_type, ycol: item_outlet_sales
+2023-04-14/18:01:22		perform target encoding encoding on xcol: item_type
+2023-04-14/18:01:22		perform Mean encoding on xcol: item_type, ycol: item_outlet_sales
+2023-04-14/18:01:22		perform target encoding encoding on xcol: item_type
+2023-04-14/18:01:22		perform Mean encoding on xcol: outlet_type, ycol: item_outlet_sales
+2023-04-14/18:01:22		perform target encoding encoding on xcol: outlet_type
+2023-04-14/18:01:22		perform Mean encoding on xcol: outlet_type, ycol: item_outlet_sales
+2023-04-14/18:01:22		perform target encoding encoding on xcol: outlet_type
+2023-04-14/18:01:22		perform Mean encoding on xcol: outlet_location_type, ycol: item_outlet_sales
+2023-04-14/18:01:22		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/18:01:22		perform Mean encoding on xcol: outlet_location_type, ycol: item_outlet_sales
+2023-04-14/18:01:22		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/18:01:22		perform Mean encoding on xcol: outlet_size_mode, ycol: item_outlet_sales
+2023-04-14/18:01:22		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/18:01:22		perform Mean encoding on xcol: outlet_size_mode, ycol: item_outlet_sales
+2023-04-14/18:01:23		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/18:01:23		store data in : artifacts/Processed_Data/train.csv & artifacts/Processed_Data/evaluation.csv
+2023-04-14/18:01:23		Successfully perform Mean Encoding technique
+
+
+2023-04-14/18:01:23		Step-4: Start to create the model
+2023-04-14/18:01:23		read the data, shape: (6818, 9)
+2023-04-14/18:01:23		separate x_train & y_train  feature
+2023-04-14/18:01:23		scaled the x_train data using StandardScaler() method
+2023-04-14/18:01:29		create the RandomForestRegressor model after getting params.
+2023-04-14/18:01:29		save the model in artifacts/Model/model.joblib directory.
+2023-04-14/18:01:29		Successfully Model is created
+
+
+2023-04-14/18:01:29		Step-5: Start to Evaluate the Model Performance
+2023-04-14/18:01:29		applying standardization on evaluation data
+2023-04-14/18:01:30		load the model for predictions from artifacts/Model/model.joblib
+2023-04-14/18:01:30		create directory for storing the scores, path: artifacts/Model_Performance_Report
+2023-04-14/18:01:30		save the report & score will be: {'mae': 303.97681306453507, 'mse': 191580.7235789007, 'rmse': 437.69935295691346, 'r2_score': 0.9352341210253836, 'train_range_op': [33.29, 13086.9648], 'evaluation_range_op': [33.29, 13086.9648]}
+2023-04-14/18:01:30		Successfully Store the Model Performance report
+2023-04-14/19:03:25		training process starts
+2023-04-14/19:03:25		Step-1: load & save train.csv data
+2023-04-14/19:03:25		read the data, shape: (8523, 9)
+2023-04-14/19:03:25		store data in : artifacts/Raw_Data/train.csv
+2023-04-14/19:03:25		successfully data is loaded and save
+
+
+2023-04-14/19:03:25		Step-2: Start to split the data
+2023-04-14/19:03:25		read the data, shape: (8523, 9)
+2023-04-14/19:03:25		split ghe data in tran.csv: (6818, 9) & evaluation.csv: (1705, 9)
+2023-04-14/19:03:25		create directory for storing the data: artifacts/Split_Data
+2023-04-14/19:03:25		store data in : artifacts/Split_Data/train.csv
+2023-04-14/19:03:25		store data in : artifacts/Split_Data/evaluation.csv
+2023-04-14/19:03:25		Splitting Operation completed
+2023-04-14/19:03:25		Successfully split the data
+
+
+2023-04-14/19:03:25		Step-3: Apply Encoding technique (mean encoding & target encoding) & store the data
+2023-04-14/19:03:25		perform Mean encoding on xcol: item_fat_content, ycol: item_outlet_sales
+2023-04-14/19:03:25		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/19:03:25		perform Mean encoding on xcol: item_fat_content, ycol: item_outlet_sales
+2023-04-14/19:03:25		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/19:03:25		perform Mean encoding on xcol: item_type, ycol: item_outlet_sales
+2023-04-14/19:03:25		perform target encoding encoding on xcol: item_type
+2023-04-14/19:03:25		perform Mean encoding on xcol: item_type, ycol: item_outlet_sales
+2023-04-14/19:03:25		perform target encoding encoding on xcol: item_type
+2023-04-14/19:03:25		perform Mean encoding on xcol: outlet_type, ycol: item_outlet_sales
+2023-04-14/19:03:25		perform target encoding encoding on xcol: outlet_type
+2023-04-14/19:03:25		perform Mean encoding on xcol: outlet_type, ycol: item_outlet_sales
+2023-04-14/19:03:25		perform target encoding encoding on xcol: outlet_type
+2023-04-14/19:03:25		perform Mean encoding on xcol: outlet_location_type, ycol: item_outlet_sales
+2023-04-14/19:03:25		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/19:03:25		perform Mean encoding on xcol: outlet_location_type, ycol: item_outlet_sales
+2023-04-14/19:03:25		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/19:03:25		perform Mean encoding on xcol: outlet_size_mode, ycol: item_outlet_sales
+2023-04-14/19:03:25		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/19:03:25		perform Mean encoding on xcol: outlet_size_mode, ycol: item_outlet_sales
+2023-04-14/19:03:25		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/19:03:26		store data in : artifacts/Processed_Data/train.csv & artifacts/Processed_Data/evaluation.csv
+2023-04-14/19:03:26		Successfully perform Mean Encoding technique
+
+
+2023-04-14/19:03:26		Step-4: Start to create the model
+2023-04-14/19:03:26		read the data, shape: (6818, 9)
+2023-04-14/19:03:26		separate x_train & y_train  feature
+2023-04-14/19:03:26		scaled the x_train data using StandardScaler() method
+2023-04-14/19:03:33		create the RandomForestRegressor model after getting params.
+2023-04-14/19:03:33		save the model in artifacts/Model/model.joblib directory.
+2023-04-14/19:03:33		Successfully Model is created
+
+
+2023-04-14/19:03:33		Step-5: Start to Evaluate the Model Performance
+2023-04-14/19:03:33		applying standardization on evaluation data
+2023-04-14/19:03:34		load the model for predictions from artifacts/Model/model.joblib
+2023-04-14/19:03:34		create directory for storing the scores, path: artifacts/Model_Performance_Report
+2023-04-14/19:03:34		save the report & score will be: {'mae': 304.67471267116457, 'mse': 193547.4687305256, 'rmse': 439.94030132567485, 'r2_score': 0.9345692421373384, 'train_range_op': [33.29, 13086.9648], 'evaluation_range_op': [33.29, 13086.9648]}
+2023-04-14/19:03:34		Successfully Store the Model Performance report
+2023-04-14/19:15:22		training process starts
+2023-04-14/19:15:22		Step-1: load & save train.csv data
+2023-04-14/19:15:22		read the data, shape: (8523, 9)
+2023-04-14/19:15:22		store data in : artifacts/Raw_Data/train.csv
+2023-04-14/19:15:22		successfully data is loaded and save
+
+
+2023-04-14/19:15:22		Step-2: Start to split the data
+2023-04-14/19:15:23		read the data, shape: (8523, 9)
+2023-04-14/19:15:23		split ghe data in tran.csv: (6818, 9) & evaluation.csv: (1705, 9)
+2023-04-14/19:15:23		create directory for storing the data: artifacts/Split_Data
+2023-04-14/19:15:23		store data in : artifacts/Split_Data/train.csv
+2023-04-14/19:15:23		store data in : artifacts/Split_Data/evaluation.csv
+2023-04-14/19:15:23		Splitting Operation completed
+2023-04-14/19:15:23		Successfully split the data
+
+
+2023-04-14/19:15:23		Step-3: Apply Encoding technique (mean encoding & target encoding) & store the data
+2023-04-14/19:15:23		perform Mean encoding on xcol: item_fat_content, ycol: item_outlet_sales
+2023-04-14/19:15:23		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/19:15:23		perform Mean encoding on xcol: item_fat_content, ycol: item_outlet_sales
+2023-04-14/19:15:23		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/19:15:23		perform Mean encoding on xcol: item_type, ycol: item_outlet_sales
+2023-04-14/19:15:23		perform target encoding encoding on xcol: item_type
+2023-04-14/19:15:23		perform Mean encoding on xcol: item_type, ycol: item_outlet_sales
+2023-04-14/19:15:23		perform target encoding encoding on xcol: item_type
+2023-04-14/19:15:23		perform Mean encoding on xcol: outlet_type, ycol: item_outlet_sales
+2023-04-14/19:15:23		perform target encoding encoding on xcol: outlet_type
+2023-04-14/19:15:23		perform Mean encoding on xcol: outlet_type, ycol: item_outlet_sales
+2023-04-14/19:15:23		perform target encoding encoding on xcol: outlet_type
+2023-04-14/19:15:23		perform Mean encoding on xcol: outlet_location_type, ycol: item_outlet_sales
+2023-04-14/19:15:23		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/19:15:23		perform Mean encoding on xcol: outlet_location_type, ycol: item_outlet_sales
+2023-04-14/19:15:23		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/19:15:23		perform Mean encoding on xcol: outlet_size_mode, ycol: item_outlet_sales
+2023-04-14/19:15:23		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/19:15:23		perform Mean encoding on xcol: outlet_size_mode, ycol: item_outlet_sales
+2023-04-14/19:15:23		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/19:15:23		store data in : artifacts/Processed_Data/train.csv & artifacts/Processed_Data/evaluation.csv
+2023-04-14/19:15:23		Successfully perform Mean Encoding technique
+
+
+2023-04-14/19:15:23		Step-4: Start to create the model
+2023-04-14/19:15:23		read the data, shape: (6818, 9)
+2023-04-14/19:15:23		separate x_train & y_train  feature
+2023-04-14/19:15:23		scaled the x_train data using StandardScaler() method
+2023-04-14/19:15:30		create the RandomForestRegressor model after getting params.
+2023-04-14/19:15:31		save the model in artifacts/Model/model.joblib directory.
+2023-04-14/19:15:31		Successfully Model is created
+
+
+2023-04-14/19:15:31		Step-5: Start to Evaluate the Model Performance
+2023-04-14/19:15:31		applying standardization on evaluation data
+2023-04-14/19:15:31		load the model for predictions from artifacts/Model/model.joblib
+2023-04-14/19:15:31		create directory for storing the scores, path: artifacts/Model_Performance_Report
+2023-04-14/19:15:31		save the report & score will be: {'mae': 304.09563170519215, 'mse': 192059.02602578435, 'rmse': 438.24539475707485, 'r2_score': 0.9350724258516239, 'train_range_op': [33.29, 13086.9648], 'evaluation_range_op': [33.29, 13086.9648]}
+2023-04-14/19:15:31		Successfully Store the Model Performance report
+2023-04-14/19:18:06		training process starts
+2023-04-14/19:18:06		Step-1: load & save train.csv data
+2023-04-14/19:18:06		read the data, shape: (8523, 9)
+2023-04-14/19:18:06		store data in : artifacts/Raw_Data/train.csv
+2023-04-14/19:18:06		successfully data is loaded and save
+
+
+2023-04-14/19:18:06		Step-2: Start to split the data
+2023-04-14/19:18:06		read the data, shape: (8523, 9)
+2023-04-14/19:18:06		split ghe data in tran.csv: (6818, 9) & evaluation.csv: (1705, 9)
+2023-04-14/19:18:06		create directory for storing the data: artifacts/Split_Data
+2023-04-14/19:18:06		store data in : artifacts/Split_Data/train.csv
+2023-04-14/19:18:06		store data in : artifacts/Split_Data/evaluation.csv
+2023-04-14/19:18:06		Splitting Operation completed
+2023-04-14/19:18:06		Successfully split the data
+
+
+2023-04-14/19:18:06		Step-3: Apply Encoding technique (mean encoding & target encoding) & store the data
+2023-04-14/19:18:06		perform Mean encoding on xcol: item_fat_content, ycol: item_outlet_sales
+2023-04-14/19:18:06		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/19:18:06		perform Mean encoding on xcol: item_fat_content, ycol: item_outlet_sales
+2023-04-14/19:18:06		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/19:18:06		perform Mean encoding on xcol: item_type, ycol: item_outlet_sales
+2023-04-14/19:18:06		perform target encoding encoding on xcol: item_type
+2023-04-14/19:18:06		perform Mean encoding on xcol: item_type, ycol: item_outlet_sales
+2023-04-14/19:18:06		perform target encoding encoding on xcol: item_type
+2023-04-14/19:18:06		perform Mean encoding on xcol: outlet_type, ycol: item_outlet_sales
+2023-04-14/19:18:06		perform target encoding encoding on xcol: outlet_type
+2023-04-14/19:18:06		perform Mean encoding on xcol: outlet_type, ycol: item_outlet_sales
+2023-04-14/19:18:06		perform target encoding encoding on xcol: outlet_type
+2023-04-14/19:18:06		perform Mean encoding on xcol: outlet_location_type, ycol: item_outlet_sales
+2023-04-14/19:18:06		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/19:18:06		perform Mean encoding on xcol: outlet_location_type, ycol: item_outlet_sales
+2023-04-14/19:18:06		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/19:18:06		perform Mean encoding on xcol: outlet_size_mode, ycol: item_outlet_sales
+2023-04-14/19:18:06		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/19:18:06		perform Mean encoding on xcol: outlet_size_mode, ycol: item_outlet_sales
+2023-04-14/19:18:06		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/19:18:07		store data in : artifacts/Processed_Data/train.csv & artifacts/Processed_Data/evaluation.csv
+2023-04-14/19:18:07		Successfully perform Mean Encoding technique
+
+
+2023-04-14/19:18:07		Step-4: Start to create the model
+2023-04-14/19:18:07		read the data, shape: (6818, 9)
+2023-04-14/19:18:07		separate x_train & y_train  feature
+2023-04-14/19:18:07		scaled the x_train data using StandardScaler() method
+2023-04-14/19:18:14		create the RandomForestRegressor model after getting params.
+2023-04-14/19:18:14		save the model in artifacts/Model/model.joblib directory.
+2023-04-14/19:18:14		Successfully Model is created
+
+
+2023-04-14/19:18:14		Step-5: Start to Evaluate the Model Performance
+2023-04-14/19:18:14		applying standardization on evaluation data
+2023-04-14/19:18:14		load the model for predictions from artifacts/Model/model.joblib
+2023-04-14/19:18:14		create directory for storing the scores, path: artifacts/Model_Performance_Report
+2023-04-14/19:18:14		save the report & score will be: {'mae': 305.0488926617776, 'mse': 194394.5546040623, 'rmse': 440.9019784533318, 'r2_score': 0.9342828758467132, 'train_range_op': [33.29, 13086.9648], 'evaluation_range_op': [33.29, 13086.9648]}
+2023-04-14/19:18:14		Successfully Store the Model Performance report
+2023-04-14/19:53:26		training process starts
+2023-04-14/19:53:26		Step-1: load & save train.csv data
+2023-04-14/19:53:26		read the data, shape: (8523, 9)
+2023-04-14/19:53:26		store data in : artifacts/Raw_Data/train.csv
+2023-04-14/19:53:26		successfully data is loaded and save
+
+
+2023-04-14/19:53:26		Step-2: Start to split the data
+2023-04-14/19:53:26		read the data, shape: (8523, 9)
+2023-04-14/19:53:26		split ghe data in tran.csv: (6818, 9) & evaluation.csv: (1705, 9)
+2023-04-14/19:53:26		create directory for storing the data: artifacts/Split_Data
+2023-04-14/19:53:26		store data in : artifacts/Split_Data/train.csv
+2023-04-14/19:53:26		store data in : artifacts/Split_Data/evaluation.csv
+2023-04-14/19:53:26		Splitting Operation completed
+2023-04-14/19:53:26		Successfully split the data
+
+
+2023-04-14/19:53:26		Step-3: Apply Encoding technique (mean encoding & target encoding) & store the data
+2023-04-14/19:53:26		perform Mean encoding on xcol: item_fat_content, ycol: item_outlet_sales
+2023-04-14/19:53:26		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/19:53:26		perform Mean encoding on xcol: item_fat_content, ycol: item_outlet_sales
+2023-04-14/19:53:26		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/19:53:26		perform Mean encoding on xcol: item_type, ycol: item_outlet_sales
+2023-04-14/19:53:26		perform target encoding encoding on xcol: item_type
+2023-04-14/19:53:26		perform Mean encoding on xcol: item_type, ycol: item_outlet_sales
+2023-04-14/19:53:26		perform target encoding encoding on xcol: item_type
+2023-04-14/19:53:26		perform Mean encoding on xcol: outlet_type, ycol: item_outlet_sales
+2023-04-14/19:53:26		perform target encoding encoding on xcol: outlet_type
+2023-04-14/19:53:26		perform Mean encoding on xcol: outlet_type, ycol: item_outlet_sales
+2023-04-14/19:53:26		perform target encoding encoding on xcol: outlet_type
+2023-04-14/19:53:26		perform Mean encoding on xcol: outlet_location_type, ycol: item_outlet_sales
+2023-04-14/19:53:26		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/19:53:26		perform Mean encoding on xcol: outlet_location_type, ycol: item_outlet_sales
+2023-04-14/19:53:26		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/19:53:26		perform Mean encoding on xcol: outlet_size_mode, ycol: item_outlet_sales
+2023-04-14/19:53:26		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/19:53:26		perform Mean encoding on xcol: outlet_size_mode, ycol: item_outlet_sales
+2023-04-14/19:53:26		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/19:53:27		store data in : artifacts/Processed_Data/train.csv & artifacts/Processed_Data/evaluation.csv
+2023-04-14/19:53:27		Successfully perform Mean Encoding technique
+
+
+2023-04-14/19:53:27		Step-4: Start to create the model
+2023-04-14/19:53:27		read the data, shape: (6818, 9)
+2023-04-14/19:53:27		separate x_train & y_train  feature
+2023-04-14/19:53:27		scaled the x_train data using StandardScaler() method
+2023-04-14/19:53:33		create the RandomForestRegressor model after getting params.
+2023-04-14/19:53:33		save the model in artifacts/Model/model.joblib directory.
+2023-04-14/19:53:33		Successfully Model is created
+
+
+2023-04-14/19:53:33		Step-5: Start to Evaluate the Model Performance
+2023-04-14/19:53:33		applying standardization on evaluation data
+2023-04-14/19:53:33		load the model for predictions from artifacts/Model/model.joblib
+2023-04-14/19:53:34		create directory for storing the scores, path: artifacts/Model_Performance_Report
+2023-04-14/19:53:34		save the report & score will be: {'mae': 305.2924282006453, 'mse': 194563.12145189842, 'rmse': 441.0930983952236, 'r2_score': 0.9342258900505321, 'train_range_op': [33.29, 13086.9648], 'evaluation_range_op': [33.29, 13086.9648]}
+2023-04-14/19:53:34		Successfully Store the Model Performance report
+2023-04-14/20:09:02		training process starts
+2023-04-14/20:09:02		Step-1: load & save train.csv data
+2023-04-14/20:09:02		read the data, shape: (8523, 9)
+2023-04-14/20:09:02		store data in : artifacts/Raw_Data/train.csv
+2023-04-14/20:09:02		successfully data is loaded and save
+
+
+2023-04-14/20:09:02		Step-2: Start to split the data
+2023-04-14/20:09:02		read the data, shape: (8523, 9)
+2023-04-14/20:09:02		split ghe data in tran.csv: (6818, 9) & evaluation.csv: (1705, 9)
+2023-04-14/20:09:02		create directory for storing the data: artifacts/Split_Data
+2023-04-14/20:09:02		store data in : artifacts/Split_Data/train.csv
+2023-04-14/20:09:02		store data in : artifacts/Split_Data/evaluation.csv
+2023-04-14/20:09:02		Splitting Operation completed
+2023-04-14/20:09:02		Successfully split the data
+
+
+2023-04-14/20:09:02		Step-3: Apply Encoding technique (mean encoding & target encoding) & store the data
+2023-04-14/20:09:02		perform Mean encoding on xcol: item_fat_content, ycol: item_outlet_sales
+2023-04-14/20:09:02		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/20:09:02		perform Mean encoding on xcol: item_fat_content, ycol: item_outlet_sales
+2023-04-14/20:09:02		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/20:09:02		perform Mean encoding on xcol: item_type, ycol: item_outlet_sales
+2023-04-14/20:09:02		perform target encoding encoding on xcol: item_type
+2023-04-14/20:09:02		perform Mean encoding on xcol: item_type, ycol: item_outlet_sales
+2023-04-14/20:09:02		perform target encoding encoding on xcol: item_type
+2023-04-14/20:09:02		perform Mean encoding on xcol: outlet_type, ycol: item_outlet_sales
+2023-04-14/20:09:02		perform target encoding encoding on xcol: outlet_type
+2023-04-14/20:09:02		perform Mean encoding on xcol: outlet_type, ycol: item_outlet_sales
+2023-04-14/20:09:02		perform target encoding encoding on xcol: outlet_type
+2023-04-14/20:09:02		perform Mean encoding on xcol: outlet_location_type, ycol: item_outlet_sales
+2023-04-14/20:09:02		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/20:09:02		perform Mean encoding on xcol: outlet_location_type, ycol: item_outlet_sales
+2023-04-14/20:09:02		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/20:09:03		perform Mean encoding on xcol: outlet_size_mode, ycol: item_outlet_sales
+2023-04-14/20:09:03		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/20:09:03		perform Mean encoding on xcol: outlet_size_mode, ycol: item_outlet_sales
+2023-04-14/20:09:03		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/20:09:03		store data in : artifacts/Processed_Data/train.csv & artifacts/Processed_Data/evaluation.csv
+2023-04-14/20:09:03		Successfully perform Mean Encoding technique
+
+
+2023-04-14/20:09:03		Step-4: Start to create the model
+2023-04-14/20:09:03		read the data, shape: (6818, 9)
+2023-04-14/20:09:03		separate x_train & y_train  feature
+2023-04-14/20:09:03		scaled the x_train data using StandardScaler() method
+2023-04-14/20:09:10		create the RandomForestRegressor model after getting params.
+2023-04-14/20:09:10		save the model in artifacts/Model/model.joblib directory.
+2023-04-14/20:09:10		Successfully Model is created
+
+
+2023-04-14/20:09:10		Step-5: Start to Evaluate the Model Performance
+2023-04-14/20:09:10		applying standardization on evaluation data
+2023-04-14/20:09:10		load the model for predictions from artifacts/Model/model.joblib
+2023-04-14/20:09:11		create directory for storing the scores, path: artifacts/Model_Performance_Report
+2023-04-14/20:09:11		save the report & score will be: {'mae': 303.84699475946024, 'mse': 193100.61948576284, 'rmse': 439.4321557257307, 'r2_score': 0.9347203042252435, 'train_range_op': [33.29, 13086.9648], 'evaluation_range_op': [33.29, 13086.9648]}
+2023-04-14/20:09:11		Successfully Store the Model Performance report
+2023-04-14/20:45:31		training process starts
+2023-04-14/20:45:31		Step-1: load & save train.csv data
+2023-04-14/20:45:31		read the data, shape: (8523, 9)
+2023-04-14/20:45:31		store data in : artifacts/Raw_Data/train.csv
+2023-04-14/20:45:31		successfully data is loaded and save
+
+
+2023-04-14/20:45:31		Step-2: Start to split the data
+2023-04-14/20:45:31		read the data, shape: (8523, 9)
+2023-04-14/20:45:31		split ghe data in tran.csv: (6818, 9) & evaluation.csv: (1705, 9)
+2023-04-14/20:45:31		create directory for storing the data: artifacts/Split_Data
+2023-04-14/20:45:31		store data in : artifacts/Split_Data/train.csv
+2023-04-14/20:45:31		store data in : artifacts/Split_Data/evaluation.csv
+2023-04-14/20:45:31		Splitting Operation completed
+2023-04-14/20:45:31		Successfully split the data
+
+
+2023-04-14/20:45:31		Step-3: Apply Encoding technique (mean encoding & target encoding) & store the data
+2023-04-14/20:45:31		perform Mean encoding on xcol: item_fat_content, ycol: item_outlet_sales
+2023-04-14/20:45:31		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/20:45:31		perform Mean encoding on xcol: item_fat_content, ycol: item_outlet_sales
+2023-04-14/20:45:31		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/20:45:31		perform Mean encoding on xcol: item_type, ycol: item_outlet_sales
+2023-04-14/20:45:31		perform target encoding encoding on xcol: item_type
+2023-04-14/20:45:31		perform Mean encoding on xcol: item_type, ycol: item_outlet_sales
+2023-04-14/20:45:31		perform target encoding encoding on xcol: item_type
+2023-04-14/20:45:31		perform Mean encoding on xcol: outlet_type, ycol: item_outlet_sales
+2023-04-14/20:45:31		perform target encoding encoding on xcol: outlet_type
+2023-04-14/20:45:31		perform Mean encoding on xcol: outlet_type, ycol: item_outlet_sales
+2023-04-14/20:45:31		perform target encoding encoding on xcol: outlet_type
+2023-04-14/20:45:31		perform Mean encoding on xcol: outlet_location_type, ycol: item_outlet_sales
+2023-04-14/20:45:31		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/20:45:31		perform Mean encoding on xcol: outlet_location_type, ycol: item_outlet_sales
+2023-04-14/20:45:31		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/20:45:31		perform Mean encoding on xcol: outlet_size_mode, ycol: item_outlet_sales
+2023-04-14/20:45:31		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/20:45:31		perform Mean encoding on xcol: outlet_size_mode, ycol: item_outlet_sales
+2023-04-14/20:45:31		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/20:45:32		store data in : artifacts/Processed_Data/train.csv & artifacts/Processed_Data/evaluation.csv
+2023-04-14/20:45:32		Successfully perform Mean Encoding technique
+
+
+2023-04-14/20:45:32		Step-4: Start to create the model
+2023-04-14/20:45:32		read the data, shape: (6818, 9)
+2023-04-14/20:45:32		separate x_train & y_train  feature
+2023-04-14/20:45:32		scaled the x_train data using StandardScaler() method
+2023-04-14/20:45:38		create the RandomForestRegressor model after getting params.
+2023-04-14/20:45:38		save the model in artifacts/Model/model.joblib directory.
+2023-04-14/20:45:38		Successfully Model is created
+
+
+2023-04-14/20:45:38		Step-5: Start to Evaluate the Model Performance
+2023-04-14/20:45:38		applying standardization on evaluation data
+2023-04-14/20:45:38		load the model for predictions from artifacts/Model/model.joblib
+2023-04-14/20:45:39		create directory for storing the scores, path: artifacts/Model_Performance_Report
+2023-04-14/20:45:39		save the report & score will be: {'mae': 303.0074822857143, 'mse': 191573.68151175283, 'rmse': 437.69130847179594, 'r2_score': 0.9352365016702633, 'train_range_op': [33.29, 13086.9648], 'evaluation_range_op': [33.29, 13086.9648]}
+2023-04-14/20:45:39		Successfully Store the Model Performance report
+2023-04-14/21:25:10		training process starts
+2023-04-14/21:25:10		Step-1: load & save train.csv data
+2023-04-14/21:25:10		read the data, shape: (8523, 9)
+2023-04-14/21:25:11		store data in : artifacts/Raw_Data/train.csv
+2023-04-14/21:25:11		successfully data is loaded and save
+
+
+2023-04-14/21:25:11		Step-2: Start to split the data
+2023-04-14/21:25:11		read the data, shape: (8523, 9)
+2023-04-14/21:25:11		split ghe data in tran.csv: (6818, 9) & evaluation.csv: (1705, 9)
+2023-04-14/21:25:11		create directory for storing the data: artifacts/Split_Data
+2023-04-14/21:25:11		store data in : artifacts/Split_Data/train.csv
+2023-04-14/21:25:11		store data in : artifacts/Split_Data/evaluation.csv
+2023-04-14/21:25:11		Splitting Operation completed
+2023-04-14/21:25:11		Successfully split the data
+
+
+2023-04-14/21:25:11		Step-3: Apply Encoding technique (mean encoding & target encoding) & store the data
+2023-04-14/21:25:11		perform Mean encoding on xcol: item_fat_content, ycol: item_outlet_sales
+2023-04-14/21:25:11		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/21:25:11		perform Mean encoding on xcol: item_fat_content, ycol: item_outlet_sales
+2023-04-14/21:25:11		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/21:25:11		perform Mean encoding on xcol: item_type, ycol: item_outlet_sales
+2023-04-14/21:25:11		perform target encoding encoding on xcol: item_type
+2023-04-14/21:25:11		perform Mean encoding on xcol: item_type, ycol: item_outlet_sales
+2023-04-14/21:25:11		perform target encoding encoding on xcol: item_type
+2023-04-14/21:25:11		perform Mean encoding on xcol: outlet_type, ycol: item_outlet_sales
+2023-04-14/21:25:11		perform target encoding encoding on xcol: outlet_type
+2023-04-14/21:25:11		perform Mean encoding on xcol: outlet_type, ycol: item_outlet_sales
+2023-04-14/21:25:11		perform target encoding encoding on xcol: outlet_type
+2023-04-14/21:25:11		perform Mean encoding on xcol: outlet_location_type, ycol: item_outlet_sales
+2023-04-14/21:25:11		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/21:25:11		perform Mean encoding on xcol: outlet_location_type, ycol: item_outlet_sales
+2023-04-14/21:25:11		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/21:25:11		perform Mean encoding on xcol: outlet_size_mode, ycol: item_outlet_sales
+2023-04-14/21:25:11		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/21:25:11		perform Mean encoding on xcol: outlet_size_mode, ycol: item_outlet_sales
+2023-04-14/21:25:11		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/21:25:11		store data in : artifacts/Processed_Data/train.csv & artifacts/Processed_Data/evaluation.csv
+2023-04-14/21:25:11		Successfully perform Mean Encoding technique
+
+
+2023-04-14/21:25:11		Step-4: Start to create the model
+2023-04-14/21:25:11		read the data, shape: (6818, 9)
+2023-04-14/21:25:11		separate x_train & y_train  feature
+2023-04-14/21:25:11		scaled the x_train data using StandardScaler() method
+2023-04-14/21:25:18		create the RandomForestRegressor model after getting params.
+2023-04-14/21:25:18		save the model in artifacts/Model/model.joblib directory.
+2023-04-14/21:25:18		Successfully Model is created
+
+
+2023-04-14/21:25:18		Step-5: Start to Evaluate the Model Performance
+2023-04-14/21:25:18		applying standardization on evaluation data
+2023-04-14/21:25:18		load the model for predictions from artifacts/Model/model.joblib
+2023-04-14/21:25:19		create directory for storing the scores, path: artifacts/Model_Performance_Report
+2023-04-14/21:25:19		save the report & score will be: {'mae': 304.3279546955119, 'mse': 192429.6445006289, 'rmse': 438.6680345097291, 'r2_score': 0.9349471343774132, 'train_range_op': [33.29, 13086.9648], 'evaluation_range_op': [33.29, 13086.9648]}
+2023-04-14/21:25:19		Successfully Store the Model Performance report

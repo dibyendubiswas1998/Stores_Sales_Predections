@@ -21,3 +21,233 @@
 2023-04-13/08:38:40		successfully predict the value & store data as a predict.csv format
 
 
+2023-04-13/10:23:57		prediction process starts based on test data
+2023-04-13/10:23:57		Step-1: load & save test.csv data
+2023-04-13/10:23:57		read the data, shape: (5681, 8)
+2023-04-13/10:23:58		store data in : artifacts/Raw_Data/test.csv
+2023-04-13/10:23:58		successfully data is loaded and save
+
+
+2023-04-13/10:23:58		apply the encoding method on test.csv dataset
+2023-04-13/10:23:58		read the data, shape: (5681, 8)
+2023-04-13/10:23:58		perform target encoding encoding on xcol: item_fat_content
+2023-04-13/10:23:58		perform target encoding encoding on xcol: item_type
+2023-04-13/10:23:58		perform target encoding encoding on xcol: outlet_type
+2023-04-13/10:23:58		perform target encoding encoding on xcol: outlet_location_type
+2023-04-13/10:23:58		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-13/10:23:58		successfully applied the encoding method and store the data
+
+
+2023-04-13/10:23:58		start to predict the output value based on test.csv data
+2023-04-13/10:23:58		read the data, shape: (5681, 8)
+2023-04-13/10:23:58		create directory for storing the predicted data, path: artifacts/Prediction/predict.csv
+2023-04-13/10:23:58		successfully predict the value & store data as a predict.csv format
+
+
+2023-04-14/17:58:33		prediction process starts based on test data
+2023-04-14/17:58:33		Step-1: load & save test.csv data
+2023-04-14/17:58:34		read the data, shape: (5681, 8)
+2023-04-14/17:58:34		store data in : artifacts/Raw_Data/test.csv
+2023-04-14/17:58:34		successfully data is loaded and save
+
+
+2023-04-14/17:58:34		apply the encoding method on test.csv dataset
+2023-04-14/17:58:34		read the data, shape: (5681, 8)
+2023-04-14/17:58:34		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/17:58:34		perform target encoding encoding on xcol: item_type
+2023-04-14/17:58:34		perform target encoding encoding on xcol: outlet_type
+2023-04-14/17:58:34		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/17:58:34		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/17:58:34		successfully applied the encoding method and store the data
+
+
+2023-04-14/17:58:34		start to predict the output value based on test.csv data
+2023-04-14/17:58:34		read the data, shape: (5681, 8)
+2023-04-14/17:58:34		create directory for storing the predicted data, path: artifacts/Prediction/predict.csv
+2023-04-14/17:58:34		successfully predict the value & store data as a predict.csv format
+
+
+2023-04-14/18:00:38		prediction process starts based on test data
+2023-04-14/18:00:38		Step-1: load & save test.csv data
+2023-04-14/18:00:38		read the data, shape: (5681, 8)
+2023-04-14/18:00:38		store data in : artifacts/Raw_Data/test.csv
+2023-04-14/18:00:38		successfully data is loaded and save
+
+
+2023-04-14/18:00:38		apply the encoding method on test.csv dataset
+2023-04-14/18:00:38		read the data, shape: (5681, 8)
+2023-04-14/18:00:38		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/18:00:38		perform target encoding encoding on xcol: item_type
+2023-04-14/18:00:38		perform target encoding encoding on xcol: outlet_type
+2023-04-14/18:00:38		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/18:00:38		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/18:00:38		successfully applied the encoding method and store the data
+
+
+2023-04-14/18:00:38		start to predict the output value based on test.csv data
+2023-04-14/18:00:38		read the data, shape: (5681, 8)
+2023-04-14/18:00:39		create directory for storing the predicted data, path: artifacts/Prediction/predict.csv
+2023-04-14/18:00:39		successfully predict the value & store data as a predict.csv format
+
+
+2023-04-14/18:01:30		prediction process starts based on test data
+2023-04-14/18:01:30		Step-1: load & save test.csv data
+2023-04-14/18:01:30		read the data, shape: (5681, 8)
+2023-04-14/18:01:30		store data in : artifacts/Raw_Data/test.csv
+2023-04-14/18:01:30		successfully data is loaded and save
+
+
+2023-04-14/18:01:30		apply the encoding method on test.csv dataset
+2023-04-14/18:01:30		read the data, shape: (5681, 8)
+2023-04-14/18:01:30		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/18:01:30		perform target encoding encoding on xcol: item_type
+2023-04-14/18:01:30		perform target encoding encoding on xcol: outlet_type
+2023-04-14/18:01:30		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/18:01:30		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/18:01:30		successfully applied the encoding method and store the data
+
+
+2023-04-14/18:01:30		start to predict the output value based on test.csv data
+2023-04-14/18:01:30		read the data, shape: (5681, 8)
+2023-04-14/18:01:31		create directory for storing the predicted data, path: artifacts/Prediction/predict.csv
+2023-04-14/18:01:31		successfully predict the value & store data as a predict.csv format
+
+
+2023-04-14/19:18:28		prediction process starts based on test data
+2023-04-14/19:18:28		Step-1: load & save test.csv data
+2023-04-14/19:18:28		read the data, shape: (5681, 8)
+2023-04-14/19:18:28		store data in : artifacts/Raw_Data/test.csv
+2023-04-14/19:18:28		successfully data is loaded and save
+
+
+2023-04-14/19:18:28		apply the encoding method on test.csv dataset
+2023-04-14/19:18:28		read the data, shape: (5681, 8)
+2023-04-14/19:18:28		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/19:18:28		perform target encoding encoding on xcol: item_type
+2023-04-14/19:18:28		perform target encoding encoding on xcol: outlet_type
+2023-04-14/19:18:28		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/19:18:28		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/19:18:29		successfully applied the encoding method and store the data
+
+
+2023-04-14/19:18:29		start to predict the output value based on test.csv data
+2023-04-14/19:18:29		read the data, shape: (5681, 8)
+2023-04-14/19:18:29		create directory for storing the predicted data, path: artifacts/Prediction/predict.csv
+2023-04-14/19:18:29		successfully predict the value & store data as a predict.csv format
+
+
+2023-04-14/19:53:35		prediction process starts based on test data
+2023-04-14/19:53:35		Step-1: load & save test.csv data
+2023-04-14/19:53:35		read the data, shape: (5681, 8)
+2023-04-14/19:53:35		store data in : artifacts/Raw_Data/test.csv
+2023-04-14/19:53:35		successfully data is loaded and save
+
+
+2023-04-14/19:53:35		apply the encoding method on test.csv dataset
+2023-04-14/19:53:35		read the data, shape: (5681, 8)
+2023-04-14/19:53:35		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/19:53:35		perform target encoding encoding on xcol: item_type
+2023-04-14/19:53:35		perform target encoding encoding on xcol: outlet_type
+2023-04-14/19:53:35		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/19:53:35		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/19:53:36		successfully applied the encoding method and store the data
+
+
+2023-04-14/19:53:36		start to predict the output value based on test.csv data
+2023-04-14/19:53:36		read the data, shape: (5681, 8)
+2023-04-14/19:53:36		create directory for storing the predicted data, path: artifacts/Prediction/predict.csv
+2023-04-14/19:53:36		successfully predict the value & store data as a predict.csv format
+
+
+2023-04-14/19:53:39		prediction process starts based on test data
+2023-04-14/19:53:39		Step-1: load & save test.csv data
+2023-04-14/19:53:39		read the data, shape: (5681, 8)
+2023-04-14/19:53:39		store data in : artifacts/Raw_Data/test.csv
+2023-04-14/19:53:39		successfully data is loaded and save
+
+
+2023-04-14/19:53:39		apply the encoding method on test.csv dataset
+2023-04-14/19:53:39		read the data, shape: (5681, 8)
+2023-04-14/19:53:39		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/19:53:39		perform target encoding encoding on xcol: item_type
+2023-04-14/19:53:39		perform target encoding encoding on xcol: outlet_type
+2023-04-14/19:53:39		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/19:53:39		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/19:53:39		successfully applied the encoding method and store the data
+
+
+2023-04-14/19:53:39		start to predict the output value based on test.csv data
+2023-04-14/19:53:39		read the data, shape: (5681, 8)
+2023-04-14/19:53:40		create directory for storing the predicted data, path: artifacts/Prediction/predict.csv
+2023-04-14/19:53:40		successfully predict the value & store data as a predict.csv format
+
+
+2023-04-14/20:09:14		prediction process starts based on test data
+2023-04-14/20:09:14		Step-1: load & save test.csv data
+2023-04-14/20:09:14		read the data, shape: (5681, 8)
+2023-04-14/20:09:14		store data in : artifacts/Raw_Data/test.csv
+2023-04-14/20:09:14		successfully data is loaded and save
+
+
+2023-04-14/20:09:14		apply the encoding method on test.csv dataset
+2023-04-14/20:09:14		read the data, shape: (5681, 8)
+2023-04-14/20:09:14		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/20:09:14		perform target encoding encoding on xcol: item_type
+2023-04-14/20:09:15		perform target encoding encoding on xcol: outlet_type
+2023-04-14/20:09:15		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/20:09:15		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/20:09:15		successfully applied the encoding method and store the data
+
+
+2023-04-14/20:09:15		start to predict the output value based on test.csv data
+2023-04-14/20:09:15		read the data, shape: (5681, 8)
+2023-04-14/20:09:15		create directory for storing the predicted data, path: artifacts/Prediction/predict.csv
+2023-04-14/20:09:15		successfully predict the value & store data as a predict.csv format
+
+
+2023-04-14/20:45:51		prediction process starts based on test data
+2023-04-14/20:45:51		Step-1: load & save test.csv data
+2023-04-14/20:45:51		read the data, shape: (5681, 8)
+2023-04-14/20:45:51		store data in : artifacts/Raw_Data/test.csv
+2023-04-14/20:45:51		successfully data is loaded and save
+
+
+2023-04-14/20:45:51		apply the encoding method on test.csv dataset
+2023-04-14/20:45:51		read the data, shape: (5681, 8)
+2023-04-14/20:45:51		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/20:45:51		perform target encoding encoding on xcol: item_type
+2023-04-14/20:45:51		perform target encoding encoding on xcol: outlet_type
+2023-04-14/20:45:51		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/20:45:51		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/20:45:51		successfully applied the encoding method and store the data
+
+
+2023-04-14/20:45:51		start to predict the output value based on test.csv data
+2023-04-14/20:45:52		read the data, shape: (5681, 8)
+2023-04-14/20:45:52		create directory for storing the predicted data, path: artifacts/Prediction/predict.csv
+2023-04-14/20:45:52		successfully predict the value & store data as a predict.csv format
+
+
+2023-04-14/21:25:23		prediction process starts based on test data
+2023-04-14/21:25:23		Step-1: load & save test.csv data
+2023-04-14/21:25:23		read the data, shape: (5681, 8)
+2023-04-14/21:25:23		store data in : artifacts/Raw_Data/test.csv
+2023-04-14/21:25:23		successfully data is loaded and save
+
+
+2023-04-14/21:25:23		apply the encoding method on test.csv dataset
+2023-04-14/21:25:23		read the data, shape: (5681, 8)
+2023-04-14/21:25:23		perform target encoding encoding on xcol: item_fat_content
+2023-04-14/21:25:23		perform target encoding encoding on xcol: item_type
+2023-04-14/21:25:23		perform target encoding encoding on xcol: outlet_type
+2023-04-14/21:25:23		perform target encoding encoding on xcol: outlet_location_type
+2023-04-14/21:25:23		perform target encoding encoding on xcol: outlet_size_mode
+2023-04-14/21:25:24		successfully applied the encoding method and store the data
+
+
+2023-04-14/21:25:24		start to predict the output value based on test.csv data
+2023-04-14/21:25:24		read the data, shape: (5681, 8)
+2023-04-14/21:25:24		create directory for storing the predicted data, path: artifacts/Prediction/predict.csv
+2023-04-14/21:25:24		successfully predict the value & store data as a predict.csv format
+
+
