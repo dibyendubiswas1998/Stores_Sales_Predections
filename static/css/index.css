@@ -1,0 +1,94 @@
+#id_1{
+	width: 500px;
+	height: 230px;
+	border: 1px solid red;
+	margin: 100px 400px;
+
+}
+#id_1 h2{
+	padding: 20px 100px;
+}
+#id_1 button{
+	height: 24px;
+	margin: 30px;
+	cursor: pointer;
+	border: none;
+	background: pink;
+	border-radius: 3px;
+
+}
+#id_1 button:hover{
+	background: lightblue;
+}
+#id_1 .sp1{
+	padding-left: 30px;
+	font-weight: bold;
+}
+
+
+#id_2{
+	height: 630px;
+	width: 400px;
+	border: 2px solid blue;
+	margin-top: 10px;
+	margin-left: 450px;
+	float: left;
+}
+#id_2 h2{
+	padding-left: 80px;
+}
+#id_2 .myfrm{
+	height: 20%;
+	width: 90%;
+	/*border: 1px solid;*/
+	margin-top: 15px;
+	margin-left: 20px;
+}
+.myfrm span{
+	color: #641E16;
+	font-weight: bolder;
+}
+.myfrm select{
+	height: 30px;
+	width: 98%;
+	padding-right: 5px;
+	cursor: pointer;
+}
+
+.myfrm input{
+	height: 25px;
+	width: 95%;
+	padding-right: 5px;
+}
+.myfrm button{
+	width: 100px;
+	height: 30px;
+	cursor: pointer;
+	border: none;
+	background: pink;
+	border-radius: 3px;
+}
+.myfrm button:hover{
+	background: lightblue;
+}
+#id_3{
+	height: 200px;
+	width: 400px;
+	border: 2px solid green;
+	float: left;
+	margin-top: 220px;
+	margin-left: 75px;
+}
+#id_3 h2{
+	padding: 15px 45px;
+}
+#id_3 .sp3{
+	padding-left: 45px;
+	font-weight: bolder;
+	color: darkblue;
+}
+#id_3 .sp4{
+	padding-left: 5px;
+	color: darkgreen;
+	font-weight: bolder;
+}
