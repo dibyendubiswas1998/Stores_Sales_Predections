@@ -32,7 +32,7 @@ def model_creation(train_data, ycol, model_directory, model_path, log_file):
 
 
         # Applying GridSearchCV:
-        # grid_param = {'kernel': ('linear', 'poly', 'rbf', 'sigmoid'),
+        # grid_params = {'kernel': ('linear', 'poly', 'rbf', 'sigmoid'),
         #          'C': [1, 5, 10],
         #          'degree': [3, 8, 13],
         #          'coef0': [0.01, 10, 0.5],
@@ -40,7 +40,7 @@ def model_creation(train_data, ycol, model_directory, model_path, log_file):
         #          },
         # svr_ = SVR() # applying SVR algorithm initially
         # grid_search = GridSearchCV(estimator=svr_,
-        #                            param_grid=grid_param,
+        #                            param_grid=grid_params,
         #                            cv=5,
         #                            n_jobs=-1)
         # grid_search.fit(x_train, y_train) # apply GridSearchCV()
@@ -51,8 +51,8 @@ def model_creation(train_data, ycol, model_directory, model_path, log_file):
         # coef0 = best_parameters['coef0']
         # gamma = best_parameters['gamma']
         # log(file_object=log_file, log_message=f"getting the parameter after applying GridSearchCV(), params: {best_parameters}") # logs the details
-        #
-        # # apply SVR algorithm, after hyperparameter tuning.
+
+        # apply SVR algorithm, after hyperparameter tuning.
         # model = SVR(kernel=kernel, degree=degree, gamma=gamma, coef0=coef0, C=C)
         model = RandomForestRegressor()
         model.fit(x_train, y_train)

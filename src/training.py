@@ -119,7 +119,7 @@ def training(config_path:str):
                          score_file_path=score_file_path,
                          log_file=training_logs_file) # start to evaluate the model and store the score.
         log(file_object=training_logs_file, log_message="Successfully Store the Model Performance report")
-
+        return "model training successfully completed"
 
 
     except Exception as e:

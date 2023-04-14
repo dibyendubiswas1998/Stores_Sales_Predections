@@ -91,6 +91,7 @@ def prediction(config_path):
         test_[output_col] = predicted_value # store in dataframe
         save_raw_local_df(data=test_, data_path=prediction_file_path) # store the predicted data in artifacts/Prediction directory
         log(file_object=prediction_logs_file, log_message="successfully predict the value & store data as a predict.csv format\n\n")
+        return "prediction processed completed based on given test data"
 
     except Exception as e:
         print(e)
