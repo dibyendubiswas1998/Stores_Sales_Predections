@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+<!--    <link rel="stylesheet" href="../static/css/index.css">-->
+    <link href="{{url_for('static', filename='css/index.css') }}" rel="stylesheet"/>
+</head>
+<body>
+    <div id="id_2">
+        <form action="/submit" method="post" >
+                <h2>Store Sales Prediction</h2>
+
+            <div class="myfrm">
+                <span>Select Item fat Content</span>
+                <select name="item_fat_content">
+                    <option>low fat</option>
+                    <option>regular</option>
+                </select>
+            </div>
+            <div class="myfrm">
+                <span>Select Item Visibility Percentage</span>
+                <select name="item_visibility">
+                    <option>0.00</option>
+                    <option>0.01</option>
+                    <option>0.02</option>
+                    <option>0.03</option>
+                    <option>0.04</option>
+                    <option>0.05</option>
+                    <option>0.06</option>
+                    <option>0.07</option>
+                    <option>0.08</option>
+                    <option>0.09</option>
+                    <option>0.1</option>
+                </select>
+            </div>
+            <div class="myfrm">
+                <span>Select Item Type</span>
+                <select name="item_type">
+                    <option>starchy foods</option>
+                    <option>seafood</option>
+                    <option>fruits and vegetables</option>
+                    <option>snack foods</option>
+                    <option>household</option>
+                    <option>canned</option>
+                    <option>dairy</option>
+                    <option>breakfast</option>
+                    <option>breads</option>
+                    <option>hard drinks</option>
+                    <option>meat</option>
+                    <option>frozen foods</option>
+                    <option>health and hygiene</option>
+                    <option>soft drinks</option>
+                    <option>baking goods</option>
+                    <option>others</option>
+                </select>
+
+            </div>
+            <div class="myfrm">
+                <span>Enter Item Mrp</span>
+                <input type="number" name="item_mrp" placeholder="Item Mrp.">
+            </div>
+            <div class="myfrm">
+                <span>Select Outlet Type</span>
+                <select name="outlet_type">
+                    <option>supermarket</option>
+                    <option>grocery store</option>
+                </select>
+            </div>
+            <div class="myfrm">
+                <span>Select Outlet Location Type</span>
+                <select name="outlet_location_type">
+                    <option>tier 1</option>
+                    <option>tier 2</option>
+                    <option>tier 3</option>
+                </select>
+            </div>
+            <div class="myfrm">
+                <span>Enter Item Weight</span>
+                <input type="number" name="item_weight_mean" placeholder="Item Weight">
+            </div>
+            <div class="myfrm">
+                <span>Select Outlet Size</span>
+                <select name="outlet_size">
+                    <option>small</option>
+                    <option>medium</option>
+                    <option>high</option>
+                </select>
+            </div>
+            <div class="myfrm">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+<!--    <div id="id_3">-->
+<!--        <h2>Store Sales Prediction Output</h2>-->
+<!--        <span class="sp3">Item Outlet Sales: </span> <span class="sp4">{{result}}</span>-->
+<!--    </div>-->
+</body>
+</html>
